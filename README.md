@@ -27,4 +27,7 @@ requirements
 next go to _localhost:8080_ and test the functionality out 
 
 * extra step : you should configure metamask to the private network http://127.0.0.1/9545   
-
+- Truffle version : Truffle v5.0.18 <br>
+- ERC-721 Token Name : HonestToken <br>
+- ERC-721 Token Symbol : HT <br>
+- OpenZeppelin version : 2.1.3 <br>
