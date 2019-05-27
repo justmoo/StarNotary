@@ -85,6 +85,7 @@ it('can add the star name and star symbol properly', async() => {
     let Symbol ="HT"
     await instance.createStar('Awesome Star!', tokenId, {from: accounts[0]})
     assert.equal( await instance.Name.call(tokenId), Name)
+    assert.equal( await instance.Symbol.call(tokenId), Symbol)
 
 
 });
@@ -103,6 +104,7 @@ it('lets 2 users exchange stars', async() => {
     await instance.exchangeStars(tokenId1, tokenId2,{from:user1});
 
     assert.equal(await instance.ownerOf.call(tokenId1),user2)
+    assert.equal(await instance.ownerOf.call(tokenId2),user1)
 });
 
 it('lets a user transfer a star', async() => {
